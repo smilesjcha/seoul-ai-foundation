@@ -36,3 +36,13 @@ docs/00-course-overview.md, docs/01-instructor-intro.md, docs/02-detailed-curric
 각 슬라이드는 하나의 메시지만 담고, 발표자 노트를 포함해줘.
 상세 지시는 claude/prompts/06-ppt-generation.md를 따른다.
 ```
+
+## 상세 원고 기반 PPT 생성 요청
+
+```md
+docs/10-ppt-lecture-outline.md와 docs/09-ppt-design-system.md를 기준으로 서울AI재단 5시간 강의용 PPT를 만들어줘.
+
+Slide 1-76 구조를 유지하고, 각 슬라이드에는 제목, 본문, 도식 지시, 발표자 노트를 포함해줘.
+강의와 실습이 자연스럽게 전환되도록 실습 슬라이드에는 사용할 파일 경로와 체크리스트를 명확히 넣어줘.
+상세 지시는 claude/prompts/07-ppt-from-detailed-outline.md를 따른다.
+```

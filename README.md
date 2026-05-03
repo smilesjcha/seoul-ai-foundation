@@ -67,6 +67,7 @@
 │   ├── 07-faq-domain-guide.md
 │   ├── 08-github-publishing-guide.md
 │   ├── 09-ppt-design-system.md
+│   ├── 10-ppt-lecture-outline.md
 │   ├── session-guides
 │   │   ├── 01-session-script.md
 │   │   └── 02-live-demo-checklist.md
@@ -85,7 +86,8 @@
 │   │   ├── 03-system-design.md
 │   │   ├── 04-implementation.md
 │   │   ├── 05-prompt-tuning.md
-│   │   └── 06-ppt-generation.md
+│   │   ├── 06-ppt-generation.md
+│   │   └── 07-ppt-from-detailed-outline.md
 │   └── templates
 │       ├── issue-template.md
 │       └── review-checklist.md
@@ -131,5 +133,6 @@ npm run dev:web
 
 - 슬라이드가 필요하면 `docs/*.md`를 바탕으로 PPT나 Notion 자료로 옮기면 됩니다.
 - PPT 디자인 기준은 `docs/09-ppt-design-system.md`를 따릅니다.
+- 상세 PPT 원고는 `docs/10-ppt-lecture-outline.md`를 기준으로 생성할 수 있습니다.
 - Claude Desktop 실습 지시문은 `claude/prompts/*.md`를 복사해 바로 사용할 수 있습니다.
 - GitHub 공개용 저장소 소개는 이 README와 `docs/08-github-publishing-guide.md`를 함께 활용하면 됩니다.
