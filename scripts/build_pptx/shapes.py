@@ -172,22 +172,33 @@ def add_horizontal_flow(slide, left, top, total_width, height, items, *,
 
 
 def add_card(slide, left, top, width, height, title, body_lines, *,
-             accent=False):
+             accent=False, title_size=None, body_size=None):
     fill = T.BLUE_10 if accent else T.WHITE
     line = T.DEEP_BLUE if accent else T.GRAY_20
     rect = add_rect(slide, left, top, width, height,
                     fill=fill, line=line, line_width=Pt(1.0), rounded=True)
-    pad = Emu(120000)
-    add_textbox(slide, left + pad, top + pad,
-                width - 2 * pad, Emu(450000), title,
-                size=T.PT_BODY, bold=True,
-                color=T.DEEP_BLUE if accent else T.BLACK)
-    if body_lines:
-        add_multi_line_textbox(
-            slide, left + pad, top + pad + Emu(420000),
-            width - 2 * pad, height - 2 * pad - Emu(420000),
-            body_lines, size=T.PT_BODY_SM, color=T.GRAY_80,
-            line_spacing=1.25)
+    tf = rect.text_frame
+    tf.word_wrap = True
+    tf.margin_left = Emu(110000)
+    tf.margin_right = Emu(110000)
+    tf.margin_top = Emu(95000)
+    tf.margin_bottom = Emu(95000)
+    tf.vertical_anchor = MSO_ANCHOR.TOP
+    p = tf.paragraphs[0]
+    p.alignment = PP_ALIGN.LEFT
+    p.line_spacing = 1.15
+    run = p.add_run()
+    run.text = title
+    set_run_font(run, size=title_size or T.PT_BODY, bold=True,
+                 color=T.DEEP_BLUE if accent else T.BLACK)
+    for body in body_lines or []:
+        bp = tf.add_paragraph()
+        bp.alignment = PP_ALIGN.LEFT
+        bp.line_spacing = 1.18
+        bp.space_before = Pt(4)
+        run = bp.add_run()
+        run.text = body
+        set_run_font(run, size=body_size or T.PT_BODY_SM, color=T.GRAY_80)
     return rect
 
 

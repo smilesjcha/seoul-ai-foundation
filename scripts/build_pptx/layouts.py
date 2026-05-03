@@ -237,9 +237,12 @@ def make_two_column(prs, data):
         cards = data.get("right_cards", [])
         n = len(cards)
         if n:
-            card_h = (Inches(5.0) - Inches(0.2) * (n - 1)) / n
+            top0 = Inches(1.75)
+            avail_h = Inches(5.15)
+            gap = Inches(0.14)
+            card_h = (avail_h - gap * (n - 1)) / n
             for i, c in enumerate(cards):
-                top = Inches(1.9) + (card_h + Inches(0.2)) * i
+                top = top0 + (card_h + gap) * i
                 S.add_card(slide, right_left, top, col_w, card_h,
                            c["title"], c.get("body", []),
                            accent=c.get("accent", False))
