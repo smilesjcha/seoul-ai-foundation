@@ -42,7 +42,10 @@ docs/00-course-overview.md, docs/01-instructor-intro.md, docs/02-detailed-curric
 ```md
 docs/10-ppt-lecture-outline.md와 docs/09-ppt-design-system.md를 기준으로 서울AI재단 5시간 강의용 PPT를 만들어줘.
 
-Slide 1-76 구조를 유지하고, 각 슬라이드에는 제목, 본문, 도식 지시, 발표자 노트를 포함해줘.
+Slide 1-77 구조를 유지하고, 각 슬라이드에는 제목, 본문, 도식 지시, 발표자 노트를 포함해줘.
 강의와 실습이 자연스럽게 전환되도록 실습 슬라이드에는 사용할 파일 경로와 체크리스트를 명확히 넣어줘.
+Mermaid 기반 flowchart, sequence diagram, ERD 장표는 docs/11-mermaid-diagram-guide.md를 참고해줘.
+PRD 리뷰 장표에는 docs/12-prd-review-perspectives.md의 Leadership / UI/UX Designer / Engineer 관점을 반영해줘.
+4명의 AI 개발자 인턴이 함께 실습하는 운영 방식은 docs/13-ai-developer-intern-lab-plan.md를 반영해줘.
 상세 지시는 claude/prompts/07-ppt-from-detailed-outline.md를 따른다.
 ```

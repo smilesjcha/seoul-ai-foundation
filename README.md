@@ -68,6 +68,9 @@
 │   ├── 08-github-publishing-guide.md
 │   ├── 09-ppt-design-system.md
 │   ├── 10-ppt-lecture-outline.md
+│   ├── 11-mermaid-diagram-guide.md
+│   ├── 12-prd-review-perspectives.md
+│   ├── 13-ai-developer-intern-lab-plan.md
 │   ├── session-guides
 │   │   ├── 01-session-script.md
 │   │   └── 02-live-demo-checklist.md
@@ -134,5 +137,7 @@ npm run dev:web
 - 슬라이드가 필요하면 `docs/*.md`를 바탕으로 PPT나 Notion 자료로 옮기면 됩니다.
 - PPT 디자인 기준은 `docs/09-ppt-design-system.md`를 따릅니다.
 - 상세 PPT 원고는 `docs/10-ppt-lecture-outline.md`를 기준으로 생성할 수 있습니다.
+- Mermaid 기반 설계 실습은 `docs/11-mermaid-diagram-guide.md`를 참고합니다.
+- PRD 다관점 리뷰는 `docs/12-prd-review-perspectives.md`, 4인 인턴 실습 운영은 `docs/13-ai-developer-intern-lab-plan.md`를 참고합니다.
 - Claude Desktop 실습 지시문은 `claude/prompts/*.md`를 복사해 바로 사용할 수 있습니다.
 - GitHub 공개용 저장소 소개는 이 README와 `docs/08-github-publishing-guide.md`를 함께 활용하면 됩니다.
