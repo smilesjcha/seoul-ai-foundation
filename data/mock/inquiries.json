@@ -1,0 +1,42 @@
+[
+  {
+    "id": "inq-1",
+    "channel": "email",
+    "status": "new",
+    "citizenName": "김민지",
+    "subject": "교육 프로그램 신청 일정 문의",
+    "message": "안녕하세요. 다음 달 진행되는 AI 교육 프로그램 신청은 언제부터 가능한지 궁금합니다.",
+    "receivedAt": "2026-05-04T09:05:00+09:00",
+    "priority": "medium"
+  },
+  {
+    "id": "inq-2",
+    "channel": "web",
+    "status": "new",
+    "citizenName": "박준호",
+    "subject": "주차 지원 여부 확인",
+    "message": "행사 당일 차량을 가지고 가야 해서요. 주차 지원이 가능한지 알고 싶습니다.",
+    "receivedAt": "2026-05-04T09:20:00+09:00",
+    "priority": "high"
+  },
+  {
+    "id": "inq-3",
+    "channel": "phone-note",
+    "status": "reviewed",
+    "citizenName": "이서연",
+    "subject": "서류 마감일 이후 제출 가능 여부",
+    "message": "모집 서류 제출 마감일을 놓쳤는데 혹시 추가 접수가 가능한가요?",
+    "receivedAt": "2026-05-04T10:10:00+09:00",
+    "priority": "medium"
+  },
+  {
+    "id": "inq-4",
+    "channel": "web",
+    "status": "new",
+    "citizenName": "최현우",
+    "subject": "시설 이용 시간 문의",
+    "message": "주말에도 시설을 이용할 수 있는지, 예약이 필요한지도 궁금합니다.",
+    "receivedAt": "2026-05-04T10:45:00+09:00",
+    "priority": "low"
+  }
+]
